@@ -73,6 +73,7 @@ public class GameHandler : MonoBehaviour, IExamine, IIsGameStart
         loadingScreen.GetComponent<FadeAnimationForImage>().FadeOut();
         yield return new WaitForSeconds(2);
         GameStart();
+        loadingScreen.SetActive(false);
         curtainCanvas.SetActive(false);
     }
     
